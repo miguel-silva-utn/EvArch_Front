@@ -29,7 +29,7 @@ export default function Result() {
     return (
         <div className="p-4">
             <h2 className="text-xl font-bold mb-4">Resultados</h2>
-            <table className="w-full border mb-4">
+            <table className="mi-tabla">
                 <thead>
                     <tr>
                         <th>Apellido</th><th>Nombre</th><th>Nota</th><th>Comentarios</th>
@@ -37,7 +37,7 @@ export default function Result() {
                 </thead>
                 <tbody>
                     {data.map((d, i) => (
-                        <tr key={i} className="border-b border-gray-300">
+                        <tr key={i}>
                             <td>{d.apellido}</td>
                             <td>{d.nombre}</td>
                             <td>{d.calificacion}</td>
