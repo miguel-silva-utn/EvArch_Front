@@ -37,7 +37,7 @@ export default function Result() {
                 </thead>
                 <tbody>
                     {data.map((d, i) => (
-                        <tr key={i}>
+                        <tr key={i} className="border-b border-gray-300">
                             <td>{d.apellido}</td>
                             <td>{d.nombre}</td>
                             <td>{d.calificacion}</td>
